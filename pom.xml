@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>hw_1_compilation</module>
+        <module>hw_2_base_types</module>
     </modules>
 
     <properties>

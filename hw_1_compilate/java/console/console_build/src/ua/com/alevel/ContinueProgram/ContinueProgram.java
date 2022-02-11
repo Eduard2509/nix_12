@@ -1,0 +1,23 @@
+package ua.com.alevel.ContinueProgram;
+
+import ua.com.alevel.EndProgram.EndProgram;
+import org.apache.commons.math3.distribution.*;
+
+public class ContinueProgram {
+
+    public void go() {
+
+        System.out.println("Program continue");
+
+        //I found this example here https://www.baeldung.com/apache-commons-math
+        NormalDistribution normalDistribution = new NormalDistribution(10, 3);
+        double randomValue = normalDistribution.sample();
+
+        System.out.println("Your random number: " + randomValue);
+        System.out.println();
+
+        EndProgram endProgram = new EndProgram();
+        endProgram.done();
+
+    }
+}
