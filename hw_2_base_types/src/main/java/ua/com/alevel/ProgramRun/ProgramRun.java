@@ -63,6 +63,7 @@ public class ProgramRun {
     }
 
     private static void sortLetters(BufferedReader reader) throws IOException {
+
         int[] lettersOut = new int[(int) Character.MAX_VALUE];
         System.out.println("Exercise 2 start!");
         System.out.println("Please enter your message include one word");
@@ -93,18 +94,19 @@ public class ProgramRun {
             }
         }
     }
-                    private static String ClassInSchool(BufferedReader reader) throws IOException {
 
-                        System.out.println("Please enter number class 1 to 10");
-                        int numberClass = Integer.parseInt(reader.readLine());
-                        if (numberClass > 0 && numberClass <= 10) {
-                            String[] endClass = new String[]{"9:45", "10:35", "11:35", "12:25", "13:25", "14:15", "15:15", "16:05", "17:05", "17:55"};
-                            System.out.println("Class " + numberClass + " ends at " + endClass[numberClass - 1]);
-                        } else {
-                            ClassInSchool(reader);
-                        }
+    private static String ClassInSchool(BufferedReader reader) throws IOException {
 
-                        return null;
-                    }
+        System.out.println("Please enter number class 1 to 10");
+        int numberClass = Integer.parseInt(reader.readLine());
+        if (numberClass > 0 && numberClass <= 10) {
+            String[] endClass = new String[]{"9:45", "10:35", "11:35", "12:25", "13:25", "14:15", "15:15", "16:05", "17:05", "17:55"};
+            System.out.println("Class " + numberClass + " ends at " + endClass[numberClass - 1]);
+        } else {
+            ClassInSchool(reader);
+        }
+
+        return null;
+    }
 
 }
