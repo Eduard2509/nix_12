@@ -11,6 +11,7 @@
 
     <modules>
         <module>hw_2_base_types</module>
+        <module>module_1</module>
     </modules>
 
     <properties>

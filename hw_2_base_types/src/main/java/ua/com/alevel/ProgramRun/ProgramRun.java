@@ -23,8 +23,6 @@ public class ProgramRun {
         } catch (IOException e) {
             System.out.println("error: " + e);
         }
-
-
     }
 
     private static void caseLogic(BufferedReader reader) throws IOException {
