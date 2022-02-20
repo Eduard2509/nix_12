@@ -6,9 +6,7 @@ import java.io.InputStreamReader;
 
 public class ProgramRun {
 
-
     public static void start() {
-
         System.out.println("Welcome to homework 2 by Eduard Miroshnichenko");
         System.out.println();
         System.out.println("Please click enter");
@@ -43,7 +41,6 @@ public class ProgramRun {
     }
 
     private static void sortAndSumNumber(BufferedReader reader) throws IOException {
-
         System.out.println("ProgramRun.exercise1 start");
         System.out.println("Please enter your message include letters and number");
         int sum = 0;
@@ -52,16 +49,12 @@ public class ProgramRun {
         for (int i = 0; i < chars.length; i++) {
             try {
                 sum += Integer.parseInt(chars[i]);
-            } catch (NumberFormatException e) {
-
-            }
-
+            } catch (NumberFormatException e) { }
         }
         System.out.println("Sum number in your message: " + sum);
     }
 
     private static void sortLetters(BufferedReader reader) throws IOException {
-
         int[] lettersOut = new int[(int) Character.MAX_VALUE];
         System.out.println("Exercise 2 start!");
         System.out.println("Please enter your message include one word");
@@ -94,7 +87,6 @@ public class ProgramRun {
     }
 
     private static String ClassInSchool(BufferedReader reader) throws IOException {
-
         System.out.println("Please enter number class 1 to 10");
         int numberClass = Integer.parseInt(reader.readLine());
         if (numberClass > 0 && numberClass <= 10) {
@@ -103,8 +95,6 @@ public class ProgramRun {
         } else {
             ClassInSchool(reader);
         }
-
         return null;
     }
-
 }
