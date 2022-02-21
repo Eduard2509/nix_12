@@ -54,6 +54,7 @@ public class TestOnValidString {
             }
             return stack.empty();
         }
+
     public static void start(BufferedReader reader) throws IOException {
         System.out.println("Please enter string for analise on validate");
         String text = reader.readLine();
