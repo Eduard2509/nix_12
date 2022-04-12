@@ -69,8 +69,8 @@ public class Main {
 
     private static void navigation() {
         System.out.println("If you want reverse all string, please enter 1");
-        System.out.println("If you want reverse all string, please enter 2");
-        System.out.println("If you want reverse all string, please enter 3");
+        System.out.println("If you want reverse part string, please enter 2");
+        System.out.println("If you want index reverse string, please enter 3");
         System.out.println("If you want exit, please enter 0");
     }
 }

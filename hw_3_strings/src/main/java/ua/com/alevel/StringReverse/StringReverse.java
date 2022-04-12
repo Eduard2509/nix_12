@@ -12,7 +12,7 @@ public class StringReverse {
 
     public static String reverse(String onString, String part) {
         String string = "";
-        for (int i = part.length() - 1; i >= 0; i--){
+        for (int i = part.length() - 1; i >= 0; i--) {
             string += part.charAt(i);
         }
         return onString.replaceAll(part, string);
@@ -26,5 +26,4 @@ public class StringReverse {
         }
         return onString.replaceAll(part, string);
     }
-
 }
